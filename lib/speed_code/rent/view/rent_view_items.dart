@@ -12,18 +12,22 @@ class _AppBar extends StatelessWidget implements PreferredSizeWidget {
       centerTitle: false,
       automaticallyImplyLeading: false,
       titleSpacing: 0,
-      title: const _SearchField(),
-      actions: [IconButton(onPressed: () {}, icon: const Icon(Icons.menu))],
-      leading: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 2),
-        child: ElevatedButton(
-            style: OutlineStyle.circleStyle,
-            onPressed: () {},
-            child: const Icon(
-              Icons.chevron_left,
-              color: Colors.black,
-            )),
+      title: Row(
+        children: [
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 2),
+            child: ElevatedButton(
+                style: OutlineStyle.circleStyle,
+                onPressed: () {},
+                child: const Icon(
+                  Icons.chevron_left,
+                  color: Colors.black,
+                )),
+          ),
+          const Expanded(child: const _SearchField()),
+        ],
       ),
+      actions: [IconButton(onPressed: () {}, icon: const Icon(Icons.menu))],
     );
   }
 
