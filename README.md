@@ -14,7 +14,8 @@ Amaç bir işi senin çözemediğin bir sorunu çözmek değil asla. Bir çözü
 
 ## Features
 
-- Status model refactoring [![b1](http://i3.ytimg.com/vi/D_9WeK8L6Rw/hqdefault.jpg)](https://youtu.be/D_9WeK8L6Rw)
+- Status model refactoring
+  <br> [![b1](http://i3.ytimg.com/vi/D_9WeK8L6Rw/hqdefault.jpg)](https://youtu.be/D_9WeK8L6Rw)
 
 
 ## Badges
