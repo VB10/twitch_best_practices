@@ -1,16 +1,32 @@
-# twitch_best_practices
 
-A new Flutter project.
+# Flutter refactoring
 
-## Getting Started
+Sende kendi projende veya yazdığın bir kodun daha iyisi nasıl olurdu düşüncesi nasıl eklenirdi diye düşünüyorsan bir pr kadar yakınındayım
 
-This project is a starting point for a Flutter application.
+## Kurallar
 
-A few resources to get you started if this is your first Flutter project:
+Amaç bir işi senin çözemediğin bir sorunu çözmek değil asla. Bir çözülmüş yazılmış öyle veya böyle çalışan kodun daha nasıl iyi olabileceğini tartışmak
+- PR atarken kendi kodunuzu bir klasör altına açmalısınız
+- Bu kod kesinlikle çalışıyor ve bir ekranda kendi sample_view.dart gibi dosyada çalışıyor olmalı.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Çalışmayan kodlar, komple proje veya bir iş yaptırma çabası yani topluluğu değil kendini düşünenler önce yayında sövülüp üstüne vb den ban yiyecektir
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+## Features
+
+- Status model refactoring
+  <br> [![b1](http://i3.ytimg.com/vi/D_9WeK8L6Rw/hqdefault.jpg)](https://youtu.be/D_9WeK8L6Rw)
+
+
+## Badges
+
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
+
+## FAQ
+
+#### Nasıl ulaşabilirim
+
+Pr dışında kabül etmeyeceğim ama sorularını twitch yayınlarından gelip sorabilirsin.
+
+
+
