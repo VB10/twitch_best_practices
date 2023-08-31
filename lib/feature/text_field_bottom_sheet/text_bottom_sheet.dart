@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 
 final class TextBottomModel {
+  TextBottomModel({required this.value, required this.isCheck});
   final String value;
   final bool isCheck;
-
-  TextBottomModel({required this.value, required this.isCheck});
 }
 
 class TextBottomSheet extends StatefulWidget {
@@ -13,7 +12,6 @@ class TextBottomSheet extends StatefulWidget {
   static Future<TextBottomModel?> show(BuildContext context) {
     return showModalBottomSheet<TextBottomModel>(
       context: context,
-      isDismissible: true,
       builder: (context) {
         return const TextBottomSheet();
       },
@@ -25,7 +23,7 @@ class TextBottomSheet extends StatefulWidget {
 }
 
 class _TextBottomSheetState extends State<TextBottomSheet> with _TextMixin {
-  static const String _buttonTitle = "Save";
+  static const String _buttonTitle = 'Save';
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -47,7 +45,7 @@ class _TextBottomSheetState extends State<TextBottomSheet> with _TextMixin {
               child: const Text(_buttonTitle),
             ),
           ),
-        )
+        ),
       ],
     );
   }
@@ -55,7 +53,7 @@ class _TextBottomSheetState extends State<TextBottomSheet> with _TextMixin {
 
 mixin _TextMixin on State<TextBottomSheet> {
   bool _isCheck = false;
-  String _textValue = "";
+  String _textValue = '';
   bool get _isValid => _isCheck && _textValue.isNotEmpty;
   void _updateCheckBox(bool? value) {
     if (value == null) return;
@@ -73,6 +71,8 @@ mixin _TextMixin on State<TextBottomSheet> {
   void _onButtonPressed() {
     if (!_isValid) return;
     Navigator.pop(
-        context, TextBottomModel(value: _textValue, isCheck: _isCheck));
+      context,
+      TextBottomModel(value: _textValue, isCheck: _isCheck),
+    );
   }
 }
