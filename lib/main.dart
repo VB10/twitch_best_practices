@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:twitch_best_practices/feature/status/status_view.dart';
-import 'package:twitch_best_practices/feature/text_field_bottom_sheet/text_field_bottom_sheet_view.dart';
-import 'package:twitch_best_practices/speed_code/chat_william/chat_william_view.dart';
-import 'package:twitch_best_practices/speed_code/rent/rent_view.dart';
-import 'package:twitch_best_practices/speed_code/reset_password/reset_password_view.dart';
+import 'package:twitch_best_practices/isar_db/features/user_view.dart';
+import 'package:twitch_best_practices/isar_db/product/database/isar/core/isar_database_initializer.dart';
 
-void main() => runApp(const MyApp());
+Future<void> main() async {
+  await _AppInitialize.setup();
+  runApp(const MyApp());
+}
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -14,7 +14,15 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       title: 'Material App',
-      home: ChatWilliamView(),
+      home: UserView(),
     );
+  }
+}
+
+class _AppInitialize {
+  _AppInitialize._();
+  static Future<void> setup() async {
+    WidgetsFlutterBinding.ensureInitialized();
+    await IsarDatabaseInitializer.instance.init();
   }
 }
