@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:twitch_best_practices/feature/custom_dialog/ali_keles_View.dart';
 import 'package:twitch_best_practices/feature/status/status_view.dart';
 import 'package:twitch_best_practices/feature/text_field_bottom_sheet/text_field_bottom_sheet_view.dart';
 import 'package:twitch_best_practices/speed_code/chat_william/chat_william_view.dart';
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       title: 'Material App',
-      home: ChatWilliamView(),
+      home: AliKelesView(),
     );
   }
 }
