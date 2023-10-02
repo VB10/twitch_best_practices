@@ -1,9 +1,14 @@
 import 'package:equatable/equatable.dart';
 import 'package:flutter/material.dart';
 
-class LangDropDown extends StatelessWidget {
-  LangDropDown({super.key});
+class LangDropDown extends StatefulWidget {
+  const LangDropDown({super.key});
 
+  @override
+  State<LangDropDown> createState() => _LangDropDownState();
+}
+
+class _LangDropDownState extends State<LangDropDown> {
   final ValueNotifier<LangAppItem?> _itemNotifier = ValueNotifier(null);
 
   @override

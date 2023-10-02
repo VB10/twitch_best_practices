@@ -120,7 +120,7 @@ class _AppBar extends StatelessWidget implements PreferredSizeWidget {
         color: Colors.black,
       ),
       leading: const Icon(Icons.menu_outlined),
-      actions: [
+      actions: const [
         LangDropDown(),
       ],
     );
