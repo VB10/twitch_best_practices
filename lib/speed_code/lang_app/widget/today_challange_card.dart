@@ -1,22 +1,28 @@
+// ignore_for_file: unused_element
+
 part of '../lang_app_view.dart';
 
 final class TodayItemCard {
-  const TodayItemCard(
-      {required this.title, required this.description, required this.hint});
+  const TodayItemCard({
+    required this.title,
+    required this.description,
+    required this.hint,
+  });
 
   final String title;
   final String description;
   final String hint;
 
   static const example = TodayItemCard(
-    title: 'Today\'s Challenge',
+    title: "Today's Challenge",
     description: 'Take this lesson to earn new milestone',
     hint: 'Tap to Start',
   );
 }
 
 class _TodaysChallenge extends StatelessWidget {
-  const _TodaysChallenge({this.item = TodayItemCard.example});
+  const _TodaysChallenge({super.key, this.item = TodayItemCard.example});
+
   final TodayItemCard item;
   @override
   Widget build(BuildContext context) {

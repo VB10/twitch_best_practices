@@ -41,7 +41,7 @@ class _GridCard extends StatelessWidget {
               Text(item.subTitle),
               const Spacer(),
               LinearProgressIndicator(
-                value: 0.41,
+                value: item.progress,
                 color: item.color,
               ),
               const Spacer(flex: 2),
