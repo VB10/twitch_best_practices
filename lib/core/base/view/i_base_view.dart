@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:stacked/stacked.dart';
 
-import 'package:twitch_best_practices/core/base/viewModel/i_base_viewmodel.dart' show IBaseViewModel;
+import 'package:twitch_best_practices/core/base/viewModel/i_base_viewmodel.dart'
+    show IBaseViewModel;
 
 class IBaseView<T extends IBaseViewModel> extends StatelessWidget {
   const IBaseView({
@@ -11,9 +12,12 @@ class IBaseView<T extends IBaseViewModel> extends StatelessWidget {
     this.loadingWidget,
     this.onModelReady,
   });
+
   final Widget Function(T model) builder;
+
   final T viewModel;
   final Widget? loadingWidget;
+
   final dynamic Function(T? model)? onModelReady;
 
   @override

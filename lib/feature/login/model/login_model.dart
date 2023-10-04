@@ -1,4 +1,4 @@
-class LoginModel {
+final class LoginModel {
   LoginModel({
     this.token,
   });
@@ -9,5 +9,5 @@ class LoginModel {
     );
   }
 
-  String? token;
+  final String? token;
 }
